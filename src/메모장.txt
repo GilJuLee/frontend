@@ -1,0 +1,10 @@
+`https://yts.mx/api/v2/list_movies.json?query_term="${this.state.input}"`; 
+ 요걸 사용하면 검색이 가능하다
+{
+    https://yts.mx/api/v2/list_movies.json?genre= 장르 정하기 https://www.imdb.com/feature/genre/ 
+    https://yts.mx/api/v2/list_movies.json?limit= 갯수 정하기 
+    https://yts.mx/api/v2/list_movies.json?minimum_rating= 레이팅(평점) 제한
+    https://yts.mx/api/v2/list_movies.json?query_term= 검색
+    https://yts.mx/api/v2/list_movies.json?sort_by= 정렬(title, year, rating, peers, seeds, download_count, like_count, date_added)
+    https://yts.mx/api/v2/list_movies.json?order_by 이름순인듯? desc, asc
+}

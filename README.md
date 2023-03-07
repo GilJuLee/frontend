@@ -1,64 +1,70 @@
-# frontend
+# Getting Started with Create React App
 
-2조 프로젝트 프론트엔드 레포입니다.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 브렌치 전략
+## Available Scripts
 
-- main: 완성된 코드가 올라옵니다.
-- dev: 기능개발이 완료된 코드가 합쳐집니다.
-- feature: 기능개발이 진행됩니다.
+In the project directory, you can run:
 
-![image](https://user-images.githubusercontent.com/97277365/222688335-2270edd3-7375-4e13-b6ff-756232d752d3.png)
+### `npm start`
 
--핫픽스는 없습니다.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-</br>
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 풀리퀘 규칙
+### `npm test`
 
-- 3명이상의 승인을 받아야 머지를 할 수 있습니다.
-- 승인을 받으면 풀리퀘를 작성하신 분이 직접 머지를 합니다.
-- main 브렌치를 직접적으로 수정하지 않습니다.
-- 작업시 각자 브렌치를 만들어 작업합니다.
-- 머지가 끝난 브렌치는 삭제합니다.
-  </br>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 브렌치 생성 방법
+### `npm run build`
 
-### cli 환경에서 브랜치 생성
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-git clone [레포주소]
-git checkout -b 브랜치이름
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-// 작업완료 후
-git push origin [브랜치이름]
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- 브렌치 이름은 자신의 작업을 나타낼 수 있는 이름으로 사용합니다.
-- feature/{기능요약} ex) 메인페이지를 만드는 경우 feature/MainPage
+### `npm run eject`
 
-### github 에서 브랜치 만들기
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-![image](https://user-images.githubusercontent.com/97277365/222694689-30f1c1b2-d628-45f9-9793-074af146ee84.png)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- view all branches를 눌러서 들어갑니다.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-![image](https://user-images.githubusercontent.com/97277365/222694887-7f09143b-6924-4bb8-b27f-bf4dc3b5699d.png)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- 우측 상단 new branch를 누릅니다.
+## Learn More
 
-![image](https://user-images.githubusercontent.com/97277365/222695033-b0f54ec9-f307-49f1-af38-e2be87bfff31.png)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- branch source 를 dev 변경한 뒤
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-![image](https://user-images.githubusercontent.com/97277365/222695202-b876c9ab-3625-46f3-9b9f-7a50084258e6.png)
+### Code Splitting
 
-- 브렌치 이름을 작성하고 create branch를 클릭합니다.
-- 새로운 브랜치가 만들어집니다!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-![image](https://user-images.githubusercontent.com/97277365/222696481-b5b5c157-4274-4a06-9e7d-68c7e01c6edf.png)
+### Analyzing the Bundle Size
 
-- 로컬에서 git clone을 한 후
-- git checkout [자신이 만든 브랜치 이름] 을 입력하여 브랜치를 전환합니다.
-- 작업을 시작하시변 됩니다 :)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
