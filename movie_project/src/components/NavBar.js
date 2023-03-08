@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate, useHistory } from "react-router-dom";
+import { useNavigate, useHistory, Link } from "react-router-dom";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -60,8 +60,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+
 const NavBar = ({ search, setSearch, showResult, setShowResult }) => {
   //Link 컴포넌트를 사용하지 않고 다른 페이지로 이동해야 할때 사용
+  const [query, setQuery] = useState(''); //길주
+  const onChange = (event) => setQuery(event.target.value); //길주
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
@@ -90,29 +93,29 @@ const NavBar = ({ search, setSearch, showResult, setShowResult }) => {
 
   const typographySx = isSmallScreen
     ? {
-        mr: 2,
-        display: { xs: "none" },
-        fontFamily: "helvetica",
-        fontWeight: 1000,
-        letterSpacing: ".1rem",
-        color: "red",
-        textDecoration: "none",
-        fontSize: "1.7em",
-      }
+      mr: 2,
+      display: { xs: "none" },
+      fontFamily: "helvetica",
+      fontWeight: 1000,
+      letterSpacing: ".1rem",
+      color: "red",
+      textDecoration: "none",
+      fontSize: "1.7em",
+    }
     : {
-        mr: 2,
-        display: "flex",
-        fontFamily: "helvetica",
-        fontWeight: 1000,
-        letterSpacing: ".1rem",
-        color: "red",
-        textDecoration: "none",
-        fontSize: "2em",
-        flexGrow: 1,
-        [theme.breakpoints.up("md")]: {
-          flexGrow: 0,
-        },
-      };
+      mr: 2,
+      display: "flex",
+      fontFamily: "helvetica",
+      fontWeight: 1000,
+      letterSpacing: ".1rem",
+      color: "red",
+      textDecoration: "none",
+      fontSize: "2em",
+      flexGrow: 1,
+      [theme.breakpoints.up("md")]: {
+        flexGrow: 0,
+      },
+    };
 
   return (
     <AppBar position="fixed" style={{ background: "#212121" }}>
@@ -153,11 +156,14 @@ const NavBar = ({ search, setSearch, showResult, setShowResult }) => {
           <Search>
             {/* searchbar */}
             <SearchIconWrapper>
-              <SearchIcon />
+              <Link to={`/search/${search}`}>
+                <button><SearchIcon /></button>
+              </Link>
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
+              value={search}
               onChange={goSearch}
             />
           </Search>

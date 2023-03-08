@@ -15,7 +15,8 @@ const App = () => {
       <Route path="/login/" element={<Layout />}>
         <Route index element={<Home />} />
       </Route>
-      <Route path="/search/" element={<SearchResult />} />
+      <Route path="/search/:search" element={<SearchResult />} />
+      {/* 길주 수정 search 수정 */}
       {/* SearchResult결과는 section3 컴포넌트 이용 */}
       <Route path="/mypage" element={<MyPage />} />
       <Route path="/settings" element={<Settings />} />
